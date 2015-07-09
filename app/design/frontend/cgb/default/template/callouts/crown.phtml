@@ -1,0 +1,138 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="block block-banner">
+    <div class="block-content">
+	<div class="offer-container" style="border:none">
+		<!--script language="JavaScript" src="https://secure.worldpay.com/wcc/logo?instId=1032521"></script-->
+		<div style="float:left;width:24%"><a href="http://www.mastercard.com" target="_blank"><img style="width: auto;" src="https://secure.worldpay.com/jsp/shopper/icons/WP_ECMC.gif" alt="MasterCard" border="0"></a></div>
+		<div style="float:left;width:24%"><a href="http://www.jcbusa.com" target="_blank"><img style="width: auto;" src="https://secure.worldpay.com/jsp/shopper/icons/WP_JCB.gif" alt="JCB" border="0"></a></div>		
+		<div style="float:left;width:24%"><a href="http://www.maestrocard.com" target="_blank"><img style="width: auto;" src="https://secure.worldpay.com/jsp/shopper/icons/WP_MAESTRO.gif" alt="Maestro" border="0"></a></div>
+		<div style="float:left;width:26%"><a href="http://www.visa.com" target="_blank"><img src="https://secure.worldpay.com/jsp/shopper/icons/WP_VISA_DELTA.gif" alt="Visa Debit" border="0"></a></div>
+	</div>
+	<div class="offer-container" style="clear:both;border:none">
+		<a href="http://www.worldpay.com/support/index.php?CMP=BA22713" target="_blank"><img src="https://secure.worldpay.com/jsp/shopper/icons/../pictures/poweredByWorldPay.gif" alt="Powered by WorldPay" border="0"></a>
+	</div>
+	<div class="offer-container">
+		<a href="<?php echo Mage::getBaseUrl()?>/stevens-bowls"><img src="<?php echo $this->getSkinUrl('images/media/Stevens.png'); ?>"/></a>
+	</div>
+	<div class="offer-container">
+		<a href="<?php echo Mage::getBaseUrl()?>/taylors-product-range"><img src="<?php echo $this->getSkinUrl('images/media/Taylors.png'); ?>"/></a>
+	</div>
+	<div class="offer-container">
+		<a href="<?php echo Mage::getBaseUrl()?>/henselite-product-range"><img src="<?php echo $this->getSkinUrl('images/media/Henselite.png'); ?>"/></a>
+	</div>
+	<div class="offer-container">
+		<a href="<?php echo Mage::getBaseUrl()?>/drakes-pride-products"><img src="<?php echo $this->getSkinUrl('images/media/Drakes-Pride.png'); ?>"/></a>
+	</div>
+	<div class="offer-container">
+		<a href="<?php echo Mage::getBaseUrl()?>/aero-bowls-products"><img src="<?php echo $this->getSkinUrl('images/media/Aero.png'); ?>"/></a>
+	</div>
+<style>
+.offer-container {
+    width: auto;
+    max-height: 500px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: #ffffff;
+
+}
+.offer-mainbody,
+.offer-header,
+.offer-footer {
+    padding: 5px;
+}
+.offer-mainbody {
+    margin-top: 0;
+    max-height: 388px;
+    text-align:center;
+    overflow: auto;
+}
+.offer-header {
+    height: 40px;
+    border-bottom: 1px solid #EEE;
+    background-color: red;
+    color:yellow;
+    font-weight: 900;
+    font-size:1.2em;
+    height: 40px;
+    text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+}
+.offer-footer {
+    height: 50px;
+    background-color: red;
+    font-weight: 900;
+    font-size:1.2em;
+    color:yellow;
+    border-top: 1px solid #DDD;
+    text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.offer-mainbody, offer-header, offer-footer p {
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.buying-bowls {
+    font-weight: 900;
+    font-size:1.5em;
+    color:black;
+} 
+
+.free-shipping {
+    font-weight: 900;
+    font-size:1.7em;
+    color:green;
+}
+
+</style>
+
+<div class="offer-container">
+    <div class="offer-header">DON'T FORGET</div>
+    <div class="offer-mainbody" style="padding:10px">
+        <p>Add more items to your basket and still get FREE shipping. See offer below.</p>
+    </div>
+</div>
+<div class="offer-container">
+    <div class="offer-header">Web Customers Only</div>
+    <div class="offer-mainbody">
+        <p class="buying-bowls">BUYING BOWLS ?</p>
+        <p>Add ANY Stevens BOWLS bag to your cart and get ...</p>
+	<img src="<?php echo $this->getSkinUrl('images/media/offer.png'); ?>"/>
+        <p class="free-shipping">FREE SHIPPING</p>
+    </div>
+    <div class="offer-footer">Offer not open to callers</div>
+</div>
+
+<div class="offer-container">
+	<a href="http://www.facebook.com/crowngreenbowler"><img src="<?php echo $this->getSkinUrl('images/media/facebook_banner.jpg'); ?>"/></a>
+</div>
+<div class="offer-container">
+	<a href="http://www.twitter.com/cgbowler"><img src="<?php echo $this->getSkinUrl('images/media/twitter.jpg'); ?>"/></a>
+</div>
+    </div>
+</div>

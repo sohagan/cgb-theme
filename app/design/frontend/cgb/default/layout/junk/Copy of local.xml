@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+	<default translate="label" module="page">
+
+		<reference name="left">
+			<block type="core/template" name="left.permanent.callout"
+				template="callouts/left_col.phtml">
+				<action method="setImgSrc">
+					<src>images/media/col_left_callout.jpg</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Our customer service is available 24/7. Call us at (555)
+						555-0123.
+					</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>checkout/cart</url>
+				</action>
+			</block>
+		</reference>
+	</default>
+
+
+	<default>
+		<cms_index_index>
+			<reference name="left_first">
+				<block after="-" type="catalog/navigation" name="catalog.leftnav"
+					template="catalog/navigation/left.phtml" />
+			</reference>
+		</cms_index_index>
+	</default>
+
+
+
+	<default>
+		<catalog_category_layered translate="label">
+			<reference name="left_first">
+				<block after="-" type="catalog/navigation" name="catalog.leftnav"
+					template="catalog/navigation/left.phtml" />
+			</reference>
+		</catalog_category_layered>
+	</default>
+
+
+</layout>

@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<layout>
+
+	<default>
+		<remove name="right.permanent.callout" />
+		<reference name="left_first">
+			<block type="catalog/navigation" name="catalog.leftmenu"
+				template="catalog/navigation/left.phtml" />
+		</reference>
+
+		<reference name="right">
+					<block type="core/template" name="right.permanent.callout.worldpay.cardlogo"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/worldpay_cards.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>You can pay using our secure Worldpay payment gateway.</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>checkout/cart</url>
+				</action>
+			</block>
+			<block type="core/template" name="right.permanent.callout.offer"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/offer-1.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Special Offers</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>special-offers</url>
+				</action>
+			</block>
+			<block type="core/template" name="right.permanent.callout.shipping"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/offer-2.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Special Offers</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>special-offers</url>
+				</action>
+			</block>
+			<block type="core/template" name="right.permanent.callout.vendor.stevens"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/Stevens.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Stevens products</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>stevens-bowls.html</url>
+				</action>
+			</block>
+			<block type="core/template" name="right.permanent.callout.vendor.taylors"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/Taylors.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>We have a wide range of Taylor products</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>taylors-product-range.html</url>
+				</action>
+			</block>
+			<block type="core/template" name="right.permanent.callout.vendor.henselite"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/Hensilite.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>We have a wide range of Henselite products.</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>henselite-product-range.html</url>
+				</action>
+			</block>
+			<block type="core/template" name="right.permanent.callout.vendor.drakes"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/Drakes-Pride.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>We have a wide range of Drakes Pride products.</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>drakes-pride-products.html</url>
+				</action>
+			</block>
+			<block type="core/template" name="right.permanent.callout.vendor.aero"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/aerologo.png</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>We stock Aero bowls</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>aero-bowls-products.html</url>
+				</action>
+			</block>
+
+			<block type="core/template" name="right.permanent.callout.social.facebook"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/facebook_banner.jpg</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Visit us on Facebook</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>https://www.facebook.com/crowngreenbowler</url>
+				</action>
+			</block>
+								<block type="core/template" name="right.permanent.callout.social.twitter"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/twitter.jpg</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Follow us on Twitter</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>https://twitter.com/cgbowler</url>
+				</action>
+			</block>
+		</reference>
+
+		<reference name="left">
+			<block type="core/template" name="right.permanent.callout.bowler-resources"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/Bowlers-Resources.jpg</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Some useful bowls resources.</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>bowler-resources</url>
+				</action>
+			</block>
+		</reference>
+	</default>
+
+
+
+	<cms_index_index>
+
+
+		<!--reference name="left">
+			<block type="core/template" name="left.permanent.callout"
+				template="callouts/left_col.phtml">
+				<action method="setImgSrc">
+					<src>images/media/col_left_callout.jpg</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Our customer service is available 24/7. Call us at (555)
+						555-0123.
+					</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>checkout/cart</url>
+				</action>
+			</block>
+		</reference-->
+		<reference name="left">
+			<block type="core/template" name="right.permanent.callout.crystal"
+				template="callouts/vendors.phtml" before="right.reports.product.viewed">
+				<action method="setImgSrc">
+					<src>images/media/Awards-crystals2.jpg</src>
+				</action>
+				<action method="setImgAlt" translate="alt" module="catalog">
+					<alt>Follow us on Twitter</alt>
+				</action>
+				<action method="setLinkUrl">
+					<url>https://twitter.com/cgbowler</url>
+				</action>
+			</block>
+		</reference>
+	</cms_index_index>
+
+
+
+	<catalog_product_view>
+		<!--Set Page Template -->
+		<reference name="root">
+			<action method="setTemplate">
+				<template>page/3columns.phtml</template>
+			</action>
+		</reference>
+	</catalog_product_view>
+
+
+	<default>
+		<!--Magento's Default Sidebar Blocks -->
+		<remove name="catalog.product.related" /> <!--Related products sidebar -->
+		<remove name="wishlist_sidebar" /> <!--Wishlist Sidebar -->
+		<remove name="catalog.compare.sidebar" /> <!--Compare Items Sidebar -->
+		<remove name="right.reports.product.compared" /> <!--Compared Products -->
+		<remove name="left.newsletter" /> <!--Sidebar Newsletter -->
+		<remove name="right.poll" /> <!--Poll -->
+		<remove name="tags_popular" /> <!--Popular Tags -->
+		<remove name="paypal.partner.right.logo" /> <!--Paypal logo Sample Data -->
+		<remove name="sale.reorder.sidebar" /> <!--Reorder Sidebar When User Logged, in Dashboard -->
+		<remove name="customer_account_navigation" /> <!--Customer Navigation -->
+
+
+	</default>
+
+     <default>
+        <reference name="footer">
+            <remove name="footer_links"/>
+            <remove name="footer_links2"/>
+            <!--block type="cms/block" name="about-us-links">
+                 <action method="setBlockId"><block_id>about-us-links</block_id></action>
+ 	    </block-->
+            <block type="cms/block" name="account-links">
+                 <action method="setBlockId"><block_id>account-links</block_id></action>
+ 	    </block>
+            <block type="cms/block" name="quick-links">
+                 <action method="setBlockId"><block_id>quick-links</block_id></action>
+ 	    </block>
+        </reference>
+    </default>
+</layout> 
