@@ -50,7 +50,16 @@ $_categories = $_rootCategory->getChildrenCategories();
 <!-- ?php $_count = is_array($_categories)?count($_categories):$_categories->count(); ?-->
 <!-- ?php if($_count): ?-->
 <div id='cssmenu' class="nav-container well sidebar-nav">
-	<ul class="nav nav-list">
+
+	<!-- added Shaun mobile menu -->
+
+        <ul class="resp-menu cat-list">
+                <li>
+                        <a><span>Categories</span></a>
+                </li>
+        </ul>
+
+	<ul id="cat-menu" class="nav nav-list">
                 <?php
 	
 foreach ( $_categories as $_category ) {

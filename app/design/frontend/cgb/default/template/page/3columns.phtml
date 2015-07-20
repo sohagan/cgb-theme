@@ -41,10 +41,41 @@
     <head>
         <?php echo $this->getChildHtml('head') ?>
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo $this->getSkinUrl('css/accordion-menu/styles.css')?>"></link>
+
+				<!-- added Shaun - mobile menu -->
+<script>
+( function($) {
+  $(document).ready(function() {
+    $('#cssmenu .cat-list li > a').click(function() {
+      $("#cat-menu").toggle();                
+    });
+  });
+}) (jQuery);
+</script>
+		
     </head>
 
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
+
+<!-- added Shaun for mobile menu -->
+
+<style>
+        .resp-menu {
+                display:none;
+        }
+@media all and (max-width: 480px) {
+        #cat-menu {
+                display: none;
+        }
+
+        .resp-menu {
+                display:block;
+        }
+}
+</style>
+
+<!-- end of Shaun add -->
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
