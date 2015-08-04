@@ -5,7 +5,7 @@
 		<remove name="right.permanent.callout" />
 		<reference name="left_first">
 			<block type="catalog/navigation" name="catalog.leftmenu"
-				template="catalog/navigation/left.phtml" />
+				template="catalog/navigation/cgb-left-nav.phtml" />
 		</reference>
 
 		<reference name="left">
